@@ -2,6 +2,10 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.1.0'
 
+group :development do
+  gem 'rspec-rails', '2.6.1'
+end
+
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
@@ -29,5 +33,6 @@ gem 'jquery-rails'
 
 group :test do
   # Pretty printed test output
-  gem 'turn', :require => false
+  gem 'rspec-rails', '2.6.1'
+  gem 'webrat','0.7.1'
 end
